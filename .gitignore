@@ -1,2 +1,7 @@
 /target
 .env
+automod.json
+user_id.json
+stock.json
+deletetracker.json
+ignore.json
