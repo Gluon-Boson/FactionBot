@@ -1,0 +1,46 @@
+{
+  "commodities": [
+    {
+      "name": "Oil",
+      "price": 73.54,
+      "currency": "USD",
+      "unit": "barrel"
+    },
+    {
+      "name": "Bread",
+      "price": 2.71,
+      "currency": "USD",
+      "unit": "loaf"
+    },
+    {
+      "name": "Dairy",
+      "price": 3.47,
+      "currency": "USD",
+      "unit": "unit"
+    },
+    {
+      "name": "Block of Cheese",
+      "price": 6.1,
+      "currency": "USD",
+      "unit": "block"
+    },
+    {
+      "name": "Whole Milk Powder",
+      "price": 3061.49,
+      "currency": "USD",
+      "unit": "tonne"
+    },
+    {
+      "name": "Skim Milk Powder",
+      "price": 3573.87,
+      "currency": "USD",
+      "unit": "tonne"
+    },
+    {
+      "name": "Cheddar Cheese",
+      "price": 4522.07,
+      "currency": "USD",
+      "unit": "tonne"
+    }
+  ]
+}

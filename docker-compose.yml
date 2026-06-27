@@ -1,0 +1,33 @@
+services:
+  factionbot:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file:
+      - .env
+    volumes:
+      - ./arsenal.json:/app/arsenal.json
+      - ./automod.json:/app/automod.json
+      - ./deletetracker.json:/app/deletetracker.json
+      - ./ignore.json:/app/ignore.json
+      - ./stock.json:/app/stock.json
+      - ./user_id.json:/app/user_id.json
+    restart: unless-stopped
+
+  db:
+    image: postgres:16
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Nokkono117!
+      - POSTGRES_DB=factionbot
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
